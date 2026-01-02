@@ -20,6 +20,9 @@ resource "aws_kms_alias" "this" {
   target_key_id = aws_kms_key.this.key_id
 }
 
+#checkov:skip=CKV_AWS_109:Intentional root anti-lockout for KMS management
+#checkov:skip=CKV_AWS_111:Intentional root anti-lockout for KMS management
+#checkov:skip=CKV_AWS_356:Intentional root anti-lockout for KMS management
 data "aws_iam_policy_document" "key_management" {
   statement {
     sid    = "AllowRootFullManagement"

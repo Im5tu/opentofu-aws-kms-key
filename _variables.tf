@@ -11,7 +11,7 @@ variable "description" {
 
 variable "enable_key_rotation" {
   type        = bool
-  description = "Specifies whether key rotation is enabled. Defaults to true following checkout best practices"
+  description = "Specifies whether key rotation is enabled. Defaults to true following Checkov best practices"
   default     = true
 }
 
