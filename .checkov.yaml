@@ -1,0 +1,4 @@
+skip-check:
+  - CKV_AWS_109  # KMS key policy - root anti-lockout requires broad permissions
+  - CKV_AWS_111  # KMS key policy - resources='*' refers to this key only
+  - CKV_AWS_356  # KMS key policy - resources='*' refers to this key only

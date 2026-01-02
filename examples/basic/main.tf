@@ -1,5 +1,3 @@
-#checkov:skip=CKV_AWS_111:KMS key policy - resources='*' refers to this key only
-#checkov:skip=CKV_AWS_356:KMS key policy - resources='*' refers to this key only
 data "aws_iam_policy_document" "kms_usage" {
   statement {
     sid    = "AllowLambdaUsage"
