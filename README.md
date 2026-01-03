@@ -24,7 +24,7 @@ data "aws_iam_policy_document" "kms_usage" {
 }
 
 module "kms_key" {
-  source = "git::https://github.com/im5tu/opentofu-aws-kms-key.git?ref=main"
+  source = "git::https://github.com/im5tu/opentofu-aws-kms-key.git?ref=693ded6a9b71a3ad71b006b86cd381979b196304"
 
   name   = "my-application-key"
   policy = data.aws_iam_policy_document.kms_usage.json
